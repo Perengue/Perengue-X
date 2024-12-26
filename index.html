@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivandro - Portfólio</title>
+    <style>
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+ /* fundo */
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+nav {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0044ff17;
+    border-bottom: 2px solid #00f;
+    z-index: 1000;
+  /* fundo */
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;        
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .inicio,
+    .sobre-mim,
+    .formacao,
+    .habilidades,
+    .projetos,
+    .contato {
+        padding: 20px;
+    }
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 50px #0011ff;
+    transform: scale(1.05);
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    padding-top: 60px;
+    border-bottom: 2px solid #00f;
+    /* fundo */
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.inicio .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.inicio .perfil img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #00f;
+    box-shadow: 0 0 50px rgba(0, 0, 255, 0.479);
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+  
+.inicio .perfil img:hover {
+    box-shadow: 0 0 50px rgba(23, 0, 155, 0.671);
+    transform: scale(1.05);
+}
+.botao {
+  color: white; 
+  padding: 10px 20px; 
+  border: 1px solid blue  ; 
+  border-radius: 5px; 
+  display: inline-block; 
+  font-size: 16px; 
+  cursor: pointer;
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover ;
+            color: #fff;
+}
+
+.botao:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+  
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.sobre-mim .caixa-texto {
+    background-color: #000;
+    border: 2px solid rgba(0, 0, 255, 0.479);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 10px #00f;
+    width: 100%;
+    max-width: 600px;
+    text-align: justify;
+    transition: box-shadow 0.3s;
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+}
+
+.sobre-mim .caixa-texto:hover {
+    box-shadow: 0 0 20px rgba(23, 0, 155, 0.671);
+}
+
+.sobre-mim .foto {
+    width: 250px;
+    height: auto;
+    border: 2px solid rgba(0, 0, 255, 0.479);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 255, 0.479);
+    transition: box-shadow 0.3s;
+    width: 150px;
+}
+
+.sobre-mim .foto:hover {
+    box-shadow: 0 0 30px rgba(23, 0, 155, 0.671);
+}
+
+.formacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+    /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            flex-wrap: wrap;
+}
+
+.formacao .caixa {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #00f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00f;
+    transition: box-shadow 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+}
+
+.formacao .caixa:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 255, 0.993);
+    transform: scale(1.01);
+}
+
+.habilidades {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.habilidades .caixa {
+    border: 2px solid #00f;
+    box-shadow: 0 0 10px rgba(0, 83, 192, 0.644);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+}
+
+.habilidade {
+    margin-bottom: 20px;
+}
+
+.habilidade .progress {
+    background-color: #00f;
+    height: 20px;
+    margin-top: 5px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+            /* fundo */
+            background-image: url('FUNDO 2.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: #fff;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 150px;
+    /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+}
+
+.projeto {
+    flex: 1 1 calc(50% - 20px);
+    border: 2px solid #00f;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(3, 0, 161, 0.637);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+}
+
+.projeto:hover {
+    box-shadow: 0 0 30px rgba(23, 0, 155, 0.671);
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    .projetos .projeto {
+        flex: 1 1 100%;
+    }
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contato {
+    padding: 50px;
+    text-align: center;
+    background-image: url('FUNDO 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid rgba(17, 0, 255, 0.589);
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    background-color: #000;
+    color: #ffffff;
+    box-shadow: 0 0 10px #0044ff;
+    transition: box-shadow 0.3s, transform 0.3s;
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+}
+
+.formulario button:hover {
+    box-shadow: 0 0 50px #0011ff;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #00f;
+    background-color: #080036;
+    color: #fff;
+  /* fundo */
+            background-image: url('FUNDO 2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Ivandro Perengue
+         
+            
+        </div>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="inicio">
+        <p><h1>Desenvolvedor de WEBSITES</h1></p>
+      
+        <div class="perfil">
+            <img src="Perfil2 PNG.png" alt="Foto de Perfil">
+            <ul class="dados">
+                <p><h1>Nome: Ivandro Peregue</h1></p>
+                <p><h3>Data de Nascimento: 13/09/2100</h3></p>
+                <p><h3>Morada: Av. das Industrias, Malhampsene, Mozambique</h3></p>
+                <p><h3>Estado Civil: Um Pouco Solteiro</h3></p>
+            </ul>
+       
+        </div>
+       <a href="Curriculum Vitae IVANDRO.pdf" 
+            class="botao">CV</a>
+    </section>
+  
+
+    <section id="sobre-mim" class="sobre-mim">
+        <div class="caixa-texto">
+            <h2>Sobre mim - WHO AM I???</h2>
+            <h5>Caríssimo, preste atenção.</h5> 
+        <h3>SEJA BEM VINDO AO MEU PORTFÓLIO</h3>
+            <p>Eu sou Ivandro Serôdio Perengue e aqui apresento-vos 
+            o meu trabalho. 
+            Esta curiosidade levou-me a estudar profundamente 
+            e a adquirir conhecimento em várias linguagens de programação e ferramentas de 
+            design, como HTML, CSS, JavaScript, e muito mais.</p>
+             
+            <p>Neste portfólio, você encontrará uma amostra do meu trabalho, que inclui projetos, 
+            habilidades e experiências.</p>
+            <p>Obrigado por visitar o meu portfólio e espero que goste!</p>
+        </div>
+        <img src="Perfil.jpg" alt="Foto de Perfil" class="foto">
+    </section>
+
+    <section id="formacao" class="formacao">
+        <div class="caixa">
+            <h3>Formação Acadêmica</h3>
+            <p>2008 - 2014 - 1 a 7 classe - Escola Primaria Completa Dignidade</p>
+            <p>2015 - 2017 - 8 a 10 classe - Escola Secundaria da Lua</p>
+            <p>2018 - 2019 - 11 a 12 classe - Escola Secundaria do Sol</p>
+        </div>
+        <div class="caixa">
+            <h3>Formação Profissional</h3>
+            <p>2020 - CV3 - Electricidade Industrial - ITC</p>
+            <p>2021 - CV4 - Tecnico de Suporte Informatico - ITC</p>
+            <p>2022 - CV5 - Programação Web - ITC</p>
+            <p>2023 - CV5 - Administraçao de Redes - ITC</p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <div class="caixa">
+            <h3>Habilidades</h3>
+            <div class="habilidade">
+                <h4>HTML</h4>
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+            <div class="habilidade">
+                <h4>JAVASCRIPT</h4>
+                <div class="progress" style="width: 45%;">45%</div>
+            </div>
+            <div class="habilidade">
+                <h4>C++</h4>
+                <div class="progress" style="width: 60%;">60%</div>
+            </div>
+            <div class="habilidade">
+                <h4>CSS</h4>
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Projectos</h2>
+        <div class="projeto"> 
+            <img src="PORTFOLIO 2.jpg" alt="Projeto 1">
+            <p>Projecto de criação de portfólio responsivo pessoal.</p>
+        </div>
+        <div class="projeto">
+            <img src="COMERCE 1.jpg" alt="Projeto 2">
+            <p>Projeto de criação de E-Commerce com carrinho de compras.</p>
+        </div>
+        <div class="projeto">
+            <img src="TAREFAS 2.jpg" alt="Projeto 3">
+            <p>Projecto de criação de Gerenciador de Tarefas.</p>
+        </div>
+        <div class="projeto">
+            <img src="WEBSITES 2.jpg" alt="Projeto 4">
+            <p>Projecto de criação de Websites & Blogs.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contacto</h2>
+        <p>Telefone: +258 84 295 1489<br>Email: ivandroserodio@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://wa.me/258842951489" target="_blank"><img src="Whatsapp.png" alt="WhatsApp"></a> 
+            <a href="https://facebook.com/seu-perfil" target="_blank"><img src="Facebook.png" alt="Facebook"></a> 
+            <a href="https://instagram.com/seu-perfil" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+        </div>
+        <form class="formulario">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="tel" name="numero" placeholder="Número de Telefone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit">Txopar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; Copyright 2024 &leftarrowtail; <strong> Ivandro Serodio Perengue </strong> &rightarrowtail; All rights reserved.  </p>
+    </footer>
+
+
+</body>
+</html>
